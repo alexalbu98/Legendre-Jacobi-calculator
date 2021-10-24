@@ -11,18 +11,48 @@
 
     <ul class="nav nav-tabs">`
       <button id="jacobi-button" class="btn btn-primary m-2">Jacobi symbols</button>
-      <button id="legendre-button" class="btn btn-primary m-2">Legendre symbols</button>
+      <button id="legendre-button" class="btn btn-primary m-2">Legendre symbol</button>
     </ul>
 
     <template id="jacobi-template"> 
       <div id="jacobi">
-        <h1>Jacobi symbols calculator</h1>
+        <div class="mb-3 p-2" style="width: 30%;">
+          <label for="numerator" class="form-label">Numerator</label>
+          <input type="number" class="form-control" id="numerator">
+        </div>
+        <div class="mb-3 p-2" style="width: 30%;">
+          <label for="denominator" class="form-label">Odd Denominator</label>
+          <input type="number" class="form-control" id="denominator">
+        </div>
+        <div class="mb-3 p-2">
+          <button id="jacobi-submit" type="submit" class="btn btn-primary">Calculate Jacobi symbol</button>
+        </div>
       </div>
     </template>
 
     <template id="legendre-template"> 
       <div id="legendre">
-        <h1>Legendre symbols calculator</h1>
+        <div class="mb-3 p-2" style="width: 30%;">
+          <label for="numerator" class="form-label">Numerator</label>
+          <input type="number" class="form-control" id="numerator">
+        </div>
+        <div class="mb-3 p-2" style="width: 30%;">
+          <label for="denominator" class="form-label">Odd Denominator</label>
+          <input type="number" class="form-control" id="denominator">
+        </div>
+        <div class="mb-3 p-2">
+          <button id="legendre-submit" type="submit" class="btn btn-primary">Calculate Legendre symbol</button>
+        </div>
+      </div>
+    </template>
+
+    <template id="result-template">
+      <div id="symbol-result">
+        <div class="mb-3 p-2" style="width: 30%;">
+          <label for="result" class="form-label">Result:</label>
+          <input type="text" disabled class="form-control" id="result" aria-describedby="resultHelp">
+          <span id="resultHelp" class="form-text alert-danger mt-4"></span>
+        </div>
       </div>
     </template>
 

@@ -1,4 +1,13 @@
 
 body{
-    background-color: wheat;
+    background-color: white;
+}
+
+.btn-primary{
+    background-color: #6f42c1 ;
+    color: white;
+}
+
+label{
+    font-weight: bold;
 }
